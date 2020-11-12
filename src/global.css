@@ -1,7 +1,7 @@
 :root {
   --background-color: #e5e5e5;
   --button-color: #f62f5e;
-  --text-color: #000;
+  --black: #2e2e2e;
 }
 * {
   margin: 0;
