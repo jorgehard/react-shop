@@ -2,89 +2,40 @@ import {
   Card,
   Grid,
   CardContent,
+  CardActions,
+  Button,
   Container,
   Typography,
   TextField,
-  Box,
 } from "@material-ui/core";
 import "./style.css";
-import ImgBanner from "../../assets/product-banner.png";
-import Img1 from "../../assets/img.png";
-import Img2 from "../../assets/img2.png";
-import Img3 from "../../assets/img3.png";
-import Img4 from "../../assets/img4.png";
-import Img5 from "../../assets/img5.png";
-import Img6 from "../../assets/img6.png";
-import Button from "../../components/Button";
-import ProductItem from "../../components/ProductItem";
-import { FaTimes } from "react-icons/fa";
+
 function ProductsGallery() {
   return (
     <Container fixed>
       <Card className="card-layout">
         <CardContent>
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
-              <img src={ImgBanner} alt="Imagem banner" />
-            </Grid>
-            <Grid item xs={8} className="grid-banner-2">
-              <h1>
-                Vera Bradley <span>£4.99</span>
-              </h1>
-              <p>
-                Carry the day in style with this extra-large tote crafted in our
-                chic B.B. Collection textured PVC. Featuring colorful faux
-                leather trim, this tote offers a roomy interior plus just
-                enough.
-              </p>
-              <Button size="18" width="30">
-                Add to Cart
-              </Button>
-            </Grid>
-          </Grid>
+          <Typography color="textSecondary" gutterBottom>
+            Word of the Day
+          </Typography>
         </CardContent>
       </Card>
       <Card className="card-layout">
         <CardContent>
           <Grid container spacing={2}>
-            <Grid item xs={1} />
-            <Grid item xs={5}>
+            <Grid item xs={3}>
               <form row={true} noValidate autoComplete="off">
-                <Grid container spacing={2}>
-                  <Grid item xs={4}>
-                    <TextField
-                      id="outlined-basic"
-                      label="Outlined"
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={4}>
-                    <TextField
-                      id="outlined-basic"
-                      label="Outlined"
-                      variant="outlined"
-                    />
-                  </Grid>
-                  <Grid item xs={4}>
-                    <TextField
-                      id="outlined-basic"
-                      label="Outlined"
-                      variant="outlined"
-                    />
-                  </Grid>
-                </Grid>
+                <TextField id="standard-basic" label="Standard" />
+                <TextField id="filled-basic" label="Filled" variant="filled" />
+                <TextField
+                  id="outlined-basic"
+                  label="Outlined"
+                  variant="outlined"
+                />
               </form>
             </Grid>
             <Grid item xs={3}>
-              <Box display="flex" justifyContent="flex-end">
-                <form noValidate autoComplete="off">
-                  <TextField
-                    id="outlined-basic"
-                    label="Outlined"
-                    variant="outlined"
-                  />
-                </form>
-              </Box>
+              item 1
             </Grid>
           </Grid>
         </CardContent>
@@ -93,31 +44,14 @@ function ProductsGallery() {
         <Grid item xs={3}>
           <Card className="card-layout">
             <CardContent>
-              <Box>
-                <Typography color="#000" gutterBottom>
-                  <FaTimes /> Gender: Woman
-                </Typography>
-                <Typography color="#000" gutterBottom>
-                  <FaTimes /> Category: Dresses
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="h5" color="textSecondary" gutterBottom>
-                  Color
-                </Typography>
-              </Box>
+              <Typography color="textSecondary" gutterBottom>
+                Word of the Day
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={9}>
-          <Grid container spacing={2}>
-            <ProductItem image={Img1} title="Men's Knitwear Offers" />
-            <ProductItem image={Img2} title="Men's Knitwear Offers" />
-            <ProductItem image={Img3} title="Men's Knitwear Offers" />
-            <ProductItem image={Img4} title="Men's Knitwear Offers" />
-            <ProductItem image={Img5} title="Men's Knitwear Offers" />
-            <ProductItem image={Img6} title="Men's Knitwear Offers" />
-          </Grid>
+          items
         </Grid>
       </Grid>
     </Container>
