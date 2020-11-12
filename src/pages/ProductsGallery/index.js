@@ -9,10 +9,15 @@ import {
 } from "@material-ui/core";
 import "./style.css";
 import ImgBanner from "../../assets/product-banner.png";
-import Img from "../../assets/img.png";
+import Img1 from "../../assets/img.png";
+import Img2 from "../../assets/img2.png";
+import Img3 from "../../assets/img3.png";
+import Img4 from "../../assets/img4.png";
+import Img5 from "../../assets/img5.png";
+import Img6 from "../../assets/img6.png";
 import Button from "../../components/Button";
 import ProductItem from "../../components/ProductItem";
-
+import { FaTimes } from "react-icons/fa";
 function ProductsGallery() {
   return (
     <Container fixed>
@@ -90,10 +95,10 @@ function ProductsGallery() {
             <CardContent>
               <Box>
                 <Typography color="#000" gutterBottom>
-                  x Gender: Woman
+                  <FaTimes /> Gender: Woman
                 </Typography>
                 <Typography color="#000" gutterBottom>
-                  x Category: Dresses
+                  <FaTimes /> Category: Dresses
                 </Typography>
               </Box>
               <Box>
@@ -106,14 +111,12 @@ function ProductsGallery() {
         </Grid>
         <Grid item xs={9}>
           <Grid container spacing={2}>
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
-            <ProductItem image={Img} title="Men's Knitwear Offers" />
+            <ProductItem image={Img1} title="Men's Knitwear Offers" />
+            <ProductItem image={Img2} title="Men's Knitwear Offers" />
+            <ProductItem image={Img3} title="Men's Knitwear Offers" />
+            <ProductItem image={Img4} title="Men's Knitwear Offers" />
+            <ProductItem image={Img5} title="Men's Knitwear Offers" />
+            <ProductItem image={Img6} title="Men's Knitwear Offers" />
           </Grid>
         </Grid>
       </Grid>

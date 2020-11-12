@@ -1,10 +1,10 @@
-import { Grid, Card, Box, CardContent, Typography } from "@material-ui/core";
+import { Grid, Card, CardContent } from "@material-ui/core";
 import Button from "../Button";
 import { FlexDiv } from "./style";
 
 function ProductItem(props) {
   return (
-    <Grid item xs={3}>
+    <Grid item xs={4}>
       <Card className="card-layout">
         <CardContent>
           <FlexDiv>
