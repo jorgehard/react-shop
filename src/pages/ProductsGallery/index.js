@@ -54,21 +54,21 @@ function ProductsGallery() {
                   <Grid item xs={4}>
                     <TextField
                       id="outlined-basic"
-                      label="Outlined"
+                      label="Gender"
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={4}>
                     <TextField
                       id="outlined-basic"
-                      label="Outlined"
+                      label="Casual"
                       variant="outlined"
                     />
                   </Grid>
                   <Grid item xs={4}>
                     <TextField
                       id="outlined-basic"
-                      label="Outlined"
+                      label="Color"
                       variant="outlined"
                     />
                   </Grid>
@@ -80,7 +80,7 @@ function ProductsGallery() {
                 <form noValidate autoComplete="off">
                   <TextField
                     id="outlined-basic"
-                    label="Outlined"
+                    label="Most relevant"
                     variant="outlined"
                   />
                 </form>
@@ -93,17 +93,17 @@ function ProductsGallery() {
         <Grid item xs={3}>
           <Card className="card-layout">
             <CardContent>
-              <Box>
-                <Typography color="#000" gutterBottom>
-                  <FaTimes /> Gender: Woman
-                </Typography>
-                <Typography color="#000" gutterBottom>
-                  <FaTimes /> Category: Dresses
-                </Typography>
+              <Box className="card-filters">
+                <p>
+                  <FaTimes size={12} /> <span>Gender:</span> Woman
+                </p>
+                <p>
+                  <FaTimes size={12} /> <span>Category:</span> Dresses
+                </p>
               </Box>
               <Box>
                 <Typography variant="h5" color="textSecondary" gutterBottom>
-                  Color
+                  <span className="title-filters">Color</span>
                 </Typography>
               </Box>
             </CardContent>

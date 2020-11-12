@@ -27,3 +27,18 @@
   width: 80%;
   margin-bottom: 20px;
 }
+.card-filters {
+  margin: 30px 0;
+}
+.card-filters p {
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.card-filters p span {
+  opacity: 0.6;
+}
+.title-filters {
+  font-weight: bold;
+  color: #b4b4b4;
+}
