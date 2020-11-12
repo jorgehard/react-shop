@@ -80,7 +80,7 @@ function ProductsGallery() {
                 <form noValidate autoComplete="off">
                   <TextField
                     id="outlined-basic"
-                    label="Outlined"
+                    label="Most relevant"
                     variant="outlined"
                   />
                 </form>
