@@ -1,7 +1,12 @@
 import Routes from "./Routes";
+import Template from "./components/Template";
 
 function App() {
-  return <Routes />;
+  return (
+    <Template>
+      <Routes />
+    </Template>
+  );
 }
 
 export default App;
